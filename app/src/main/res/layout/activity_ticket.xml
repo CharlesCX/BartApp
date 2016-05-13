@@ -10,16 +10,6 @@
     tools:context="com.charles.bartapp.Ticket">
 
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/eOrigin"
-        android:layout_below="@+id/tOrigin"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,8 +18,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/eOrigin"
-        android:layout_alignEnd="@+id/eOrigin"
         android:text="Origin Station" />
 
     <TextView
@@ -38,32 +26,20 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Destination Station"
         android:id="@+id/eDestination"
-        android:layout_below="@+id/eOrigin"
+        android:layout_below="@+id/oSpinner"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/eOrigin"
-        android:layout_alignEnd="@+id/eOrigin" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/eDest"
-        android:layout_below="@+id/eDestination"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/eDestination"
-        android:layout_alignEnd="@+id/eDestination" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Get Fare"
         android:id="@+id/bFare"
-        android:layout_below="@+id/eDest"
+        android:layout_below="@+id/dSpinner"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignRight="@+id/dSpinner"
+        android:layout_alignEnd="@+id/dSpinner" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -75,5 +51,21 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/bFare"
         android:layout_alignEnd="@+id/bFare" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/oSpinner"
+        android:layout_below="@+id/tOrigin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dSpinner"
+        android:layout_below="@+id/eDestination"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
